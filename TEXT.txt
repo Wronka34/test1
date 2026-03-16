@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 to ja w to
+teraz robie w yolo
+
+>>>>>>> yolo
