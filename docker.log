@@ -1,0 +1,107 @@
+    2  mkdir docker-lab
+    4  cd docker-lab
+    8  docker build -t lab-app .
+   10  docker build -t lab-app
+   11  docker build -t lab-app .
+   12  docker run -d -p 80:3000 --name moja-apka lab-app
+   13  docker rm -f moja-apka
+   14  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name apka-dev lab-app npm run dev
+   15  cd  docker-lab
+   16  docker rm -f apka-dev
+   18  cd docker-lab
+   21  docker ps
+   27  docker ps -a
+   28  cd docker-lab
+   33  docker build -t lab-app
+   34  docker build -t lab app .
+   35  docker build -t lab-app .
+   37  docker build -t lab-app .
+   38  docker run -d -p 80:3000 --name moja-apka lab-app
+   41  docker build -t lab-app1 .
+   42  docker build -d -p 80:5000 -name moja-apka1 lab-app1
+   43  docker run -d -p 80:5000 --name moja-apka1 lab-app1
+   44  docker run -d -p 3029:5000 --name moja-apka1 lab-app1
+   45  docker rm -f moja-apka1
+   46  docker run -d -p 3029:5000 --name moja-apka1 lab-app1 .
+   47  docker rm -f moja-apka
+   48  docker rm -f moja-apka1
+   51  docker run -d -p 80:3000 -v"${PWD}:/app" -v/app/node_modules --name apka-dev lab-app npm run dev
+   54  docker exec-it apka-dev sh
+   55  docker exec -it apka-dev sh
+   56  docker rm -f apka-dev
+   57  nano docker-compose.yml
+   58  docker-compose up -d
+   59  docker compose up -d
+   60  docker compose ps
+   61  nano docker-compose.yml
+   62  docker compuse up -d
+   63  docker compose up -d
+   64  nano docker-compose.yml
+   65  docker compose p -d
+   66  docker compose up -d
+   67  nano docker-compose.yml
+   68  docker compose up -d
+   69  nano docker-compose.yml
+   70  docker compose up -d
+   71  nano docker-compose.yml
+   72  docker compose up -d
+   73  docker compose ps
+   74  docker compose logs web
+   75  docker compose logs db_manager
+   76  nano docker-compose.yml
+   77  docker compose up -d
+   78  docker compose down
+   79  docker-compose up -d
+   80  docker compose up -d
+   81  docker compose down -v
+   82  docker system prune -f
+   84  docker ps -a
+   85  docker images
+   86  docker volume ls
+   89  docker build -t kolokwium:latest
+   90  docker build -t kolokwium:latest .
+   91  docker run -d -p 3000:3000 --name kontener kolokwium:latest
+   93  docker rm -f kontener
+   94  docker system prune -f
+   95  history | grep docker | tee docker.log
+   96  git add docker.log
+  101  docker build -t kolokwium:latest .
+  103  docker build -t kolokwium:latest .
+  106  docker build -t kolokwium:latest .
+  107  docker run -d -p 3000:3000 --name kontener kolokwium:latest
+  109  docker stop
+  110  docker rm -f kontener
+  111  docker system prune -f
+  112  docker ps
+  113  docker images
+  114  docker rmi kolokwium:latest
+  115  docker images
+  116  history | grep docker | tee docker.log
+  117  git add docker.log
+  121  git add docker.log
+  131  docker build -t obraz .
+  132  docker run -d -p 80:3000 --name kontener obraz
+  133  docker rm -f kontener
+  134  docker run -d -p 80:3000 -v"${PWD}:/app" -v app/node_modules --name kontener1 obraz npm run dev
+  135  docker rm -f kontener1
+  136  docker compose up -d
+  137  docker compose ps
+  138  docker compose down
+  139  docker compose up -d
+  140  docker compose down -v
+  141  docker system pure -f
+  142  docker system prune -f
+  143  docker images
+  144  docker rmi obraz
+  151  docker build -t kolokwium:latest .
+  152  docker run -d -p 3000:3000 kontener kolokwium:latest
+  153  docker run -d -p 3000:3000 --name kontener kolkowium:latest
+  154  docker run -d -p 3000:3000 --name kontener kolokwium:latest
+  156  docker stop kontener
+  157  docker rm kontener
+  158  docker ps
+  159  docker ps -a
+  160  docker rmi 
+  161  docker rmi kolokwium:latest
+  162  docker images
+  163  history | grep docker | tee docker.log
